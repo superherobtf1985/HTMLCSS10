@@ -21,10 +21,6 @@ header {
   margin: 0 auto;
 }
 
-nav {
-  float: right;
-}
-
 a {
   text-decoration: none;
 }
@@ -35,7 +31,7 @@ a {
 }
 
 .nav-list {
-  display: inline-block;
+  float: right;
 }
 
 .nav-list a {
@@ -49,6 +45,7 @@ a {
   font-size: 16px;
   float: left;
   color: #FAFAFA;
+  width: 120px;
 }
 
 #main-visual {
@@ -56,20 +53,20 @@ a {
   height: 650px;
   background-image: url(img/mv.png);
   background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #FAFAFA;
 }
 
 .mv-title {
   padding-top: 200px;
-  text-align: center;
   font-size: 64px;
-  color: #FAFAFA;
+  font-family: 'Raleway', sans-serif;
 }
 
 .mv-text {
   padding-top: 10px;
   font-size: 20px;
-  color: #FAFAFA;
-  text-align: center;
 }
 
 #Portfolio {
@@ -80,8 +77,8 @@ a {
 .heading {
   padding-top: 90px;
   font-size: 32px;
-  color: #000000;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .heading::after {
@@ -97,7 +94,6 @@ a {
   text-align: center;
   padding-top: 30px;
   font-size: 16px;
-  color: #000000;
 }
 
 .pf-productions {
@@ -143,7 +139,8 @@ a {
 }
 
 #Feature {
-  /* background-position: center; */
+  background-position: center;
+  background-size: cover;
 }
 
 .strength-group {
@@ -216,7 +213,6 @@ a {
 
 .discription-text {
   font-size: 16px;
-  color: #000000;
 }
 
 .contact-group {
@@ -226,7 +222,8 @@ a {
 }
 
 .left-contact-content {
-  text-align: center;
+  width: 130px;
+  margin: 0 auto;
 }
 
 .right-contact-content {
@@ -243,10 +240,16 @@ a {
   margin-right: 0;
 }
 
+.link-text {
+  text-decoration: underline;
+  color: #212121;
+}
+
 footer {
   width: 100%;
   line-height: 60px;
   background-color: #EC715F;
+  height: 60px;
 }
 
 .copyright {
@@ -266,6 +269,7 @@ footer {
 
   .header-logo {
     height: 50px;
+    float: none;
   }
 
   .menu-box {
@@ -275,6 +279,7 @@ footer {
     border: 1px solid #FAFAFA;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-right: 5%;
   }
 
   .list-bar {
@@ -290,12 +295,22 @@ footer {
   }
 
   .nav-list {
+    float: none;
+  }
+
+  .nav-list-item {
     display: none;
     float: none;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgba(0,0,0,.9);
   }
 
   #main-visual {
     background-image: url(img/code.png);
+    padding-top: 50px;
   }
 
   .mv-title {
@@ -352,11 +367,6 @@ footer {
     width: 100%;
   }
 
-  .right-content {
-    float: none;
-    width: 100%;
-  }
-
   .discription-title:first-child {
     margin-top: 20px;
   }
@@ -368,5 +378,9 @@ footer {
   .contact-group {
     width: 100%;
     text-align: center;
+  }
+
+  .left-contact-content {
+    width: 100%;
   }
 }
