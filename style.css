@@ -154,6 +154,7 @@ a {
   text-align: center;
   margin-right: 10px;
   float: left;
+  font-size: 60px;
 }
 
 .strength:last-child {
@@ -166,14 +167,12 @@ a {
 
 .strength-title {
   font-size: 20px;
-  color: #000000;
   padding: 10px 0;
 }
 
 .strength-text {
   text-align: left;
   font-size: 16px;
-  color: #000000;
 }
 
 #Profile {
@@ -363,6 +362,11 @@ footer {
   }
 
   .left-content {
+    float: none;
+    width: 100%;
+  }
+
+  .right-content {
     float: none;
     width: 100%;
   }
